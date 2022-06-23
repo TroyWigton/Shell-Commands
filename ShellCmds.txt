@@ -1,6 +1,6 @@
 pwd -W  (Shows full system path)
 ls -d (directories only)
-
+find . -name <*filename*>
 
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 i is the name of the loop variable. */ means every subdirectory of the current directory, and will include a trailing slash in those names. 
